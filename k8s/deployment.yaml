@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: python-demo
-        image: <ACR_LOGIN_SERVER>/python-demo:latest
+        image: acrquicksole/python-demo:latest
         ports:
         - containerPort: 80
