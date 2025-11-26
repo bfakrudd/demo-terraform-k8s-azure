@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: python-demo
+  template:
+    metadata:
+      labels:
+        app: python-demo
+    spec:
+      containers:
+      - name: python-demo
+        image: <ACR_LOGIN_SERVER>/python-demo:latest
+        ports:
+        - containerPort: 80
