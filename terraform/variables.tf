@@ -5,5 +5,5 @@ variable "location" {
 
 variable "kubernetes_version" {
   description = "AKS Kubernetes version"
-  default     = "1.28.3"
+  default     = "1.33.3"
 }
