@@ -31,7 +31,7 @@ Note outputs: ACR login server, AKS kubeconfig, credentials.
 
 ```bash
 az acr login --name <acr_name>
-docker build -t <acr_login_server>/python-demo:latest .
+docker build --platform linux/amd64 -t <acr_login_server>/python-demo:latest .
 docker push <acr_login_server>/python-demo:latest
 ```
 
