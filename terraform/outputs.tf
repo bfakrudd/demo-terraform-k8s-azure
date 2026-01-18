@@ -1,5 +1,5 @@
 output "resource_group_name" {
-  value = azurerm_resource_group.k8s.name
+  value = data.azurerm_resource_group.k8s.name
 }
 
 output "aks_cluster_name" {
@@ -13,3 +13,4 @@ output "acr_name" {
 output "acr_login_server_1" {
   value = azurerm_container_registry.acr.login_server
 }
+

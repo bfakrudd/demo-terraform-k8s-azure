@@ -42,6 +42,10 @@ export KUBECONFIG=$(pwd)/kubeconfig
 kubectl get nodes
 ```
 Or using output from `terraform output kube_config`.
+```bash
+terraform output -raw kube_config > azurek8s.yaml
+export KUBECONFIG=$(pwd)/azurek8s.yaml
+```
 
 ### 4. Deploy to AKS
 
