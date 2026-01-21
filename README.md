@@ -1,4 +1,4 @@
-# Demo: Terraform Project for Kubernetes Application on Azure
+# Terraform Project for Kubernetes Application on Azure
 
 This project provisions Azure resources and deploys a containerized Python app to Kubernetes using AKS, ACR, and Terraform.
 
